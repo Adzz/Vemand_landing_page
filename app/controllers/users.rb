@@ -1,10 +1,9 @@
 post '/users' do
-	email = params["email"]
-	name = params["name"]
-	@user = User.new(email: params[:email], name: params[:name])
-	if @user.save
-		redirect '/'
-	else
-		flash.now[:errors] = @user.errors.full_messages
-		erb :index
+  @user = User.new(email: params[:email])
+  if @user.save
+    redirect to('/')
+  else
+    flash.now[:error] = @user.errors.full_messages
+    erb :index
+  end
 end

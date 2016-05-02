@@ -1,5 +1,8 @@
 env = ENV["RACK_ENV"] || "development"
-#require the model(s):
+require 'data_mapper'
+require 'dm-postgres-adapter'
 
-DataMapper.setup(:default, ENV["DATABASE_URL"] || "postgres://localhost/vemand_landing#{env}")
+require_relative 'models/users'
+
+DataMapper.setup(:default, ENV["DATABASE_URL"] || "postgres://localhost/vemand_landing_#{env}")
 DataMapper.finalize
