@@ -6,7 +6,8 @@ html {
   background-size: cover;
   color: #fafafa;
   text-align: center;
-  font-family: "Gill sans"; }
+  font-family: "Lato", "sans-serif";
+  overflow: scroll; }
 
 h2 {
   font-size: 2em;
@@ -30,7 +31,7 @@ form {
   display: block;
   padding: 10px;
   position: relative;
-  top: 10vh; }
+  top: 6.5vh; }
 
 input {
   background-color: rgba(250, 250, 250, 0.8);
@@ -85,11 +86,11 @@ i {
   padding-top: 5.5vh; }
 
 .logo {
-  padding: 3vh;
+  padding: 1vh;
   position: relative;
-  top: 4vh;
-  width: 10%;
-  height: 10%; }
+  top: 3vh;
+  width: 30%;
+  height: 30%; }
 
 .error-messages {
   position: relative;
@@ -102,16 +103,20 @@ i {
 
 .subtitle {
   position: relative;
-  top: 15vh; }
+  top: 10vh; }
   .subtitle h3 {
     padding: 1%; }
 
 .main {
   background-color: rgba(13, 13, 13, 0.5);
   position: relative;
-  top: 8vh;
-  height: 66vh;
-  margin-left: 8vw;
-  margin-right: 8vw; }
+  top: 5vh;
+  height: 50vh;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px; }
+
+.heading {
+  line-height: 300%;
+  font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */

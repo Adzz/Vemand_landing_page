@@ -19,7 +19,8 @@ html {
   background-size: cover;
   color:$white;
   text-align: center;
-  font-family: $body-font;
+  font-family: $font-family--buttons;
+  overflow: scroll;
 }
 
 
@@ -52,7 +53,7 @@ form {
   display: block;
   padding: 10px;
   position: relative;
-  top:10vh;
+  top:6.5vh;
 }
 
 input {
@@ -119,11 +120,11 @@ i {
 }
 
 .logo {
-  padding: 3vh;
+  padding: 1vh;
   position: relative;
-  top:4vh;
-  width: 10%;
-  height: 10%;
+  top:3vh;
+  width: 30%;
+  height: 30%;
 }
 
 .error-messages{
@@ -140,7 +141,7 @@ i {
 
 .subtitle {
   position: relative;
-  top:15vh;
+  top:10vh;
   h3 {
     padding: 1%;
   }
@@ -149,10 +150,17 @@ i {
 .main {
   background-color:rgba($black,0.5);
   position: relative;
-  top: 8vh;
-  height: 66vh;
-  margin-left: 8vw;
-  margin-right: 8vw;
+  top: 5vh;
+  height: 50vh;
+  margin: 0 auto;
+  // width: fit-content;
+  padding: 0px 20px 0px 20px;
+
+}
+
+.heading {
+  line-height: 300%;
+  font-style: italic;
 }
 
 // /* IE 6 */
