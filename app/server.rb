@@ -4,7 +4,6 @@ require 'sinatra/flash'
 require 'sinatra/partial'
 require 'sass/plugin/rack'
 
-
 require_relative 'data_mapper_setup'
 require_relative 'controllers/application'
 require_relative 'controllers/users'
